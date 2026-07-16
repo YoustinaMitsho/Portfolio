@@ -1,0 +1,176 @@
+/* --- CSS VARIABLES (Your Color Palette) --- */
+:root {
+    --dark-navy: #112e81;
+    --royal-blue: #4647ae;
+    --bright-blue: #4382df;
+    --ice-blue: #aaccd6;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-navy);
+    color: var(--white);
+}
+
+/* --- NAVIGATION BAR --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--royal-blue);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-controls {
+    display: flex;
+    gap: 15px;
+}
+
+.search-bar {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--ice-blue);
+}
+
+/* --- HOMEPAGE HERO CAROUSEL --- */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--bright-blue);
+    gap: 20px;
+}
+
+.carousel-btn {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.hero-content {
+    width: 800px;
+    height: 400px;
+    background-color: var(--dark-navy);
+    border: 2px solid var(--ice-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- GAMES GRID & ABOUT --- */
+.main-content {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+}
+
+.games-section {
+    flex: 3;
+}
+
+.filter-btn {
+    background-color: var(--royal-blue);
+    color: var(--white);
+    border: 1px solid var(--ice-blue);
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.game-card {
+    background-color: var(--royal-blue);
+    height: 250px;
+    border: 1px solid var(--bright-blue);
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    border-color: var(--ice-blue);
+}
+
+.about-section {
+    flex: 1;
+    background-color: var(--royal-blue);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* --- GAME DETAILS PAGE --- */
+.game-details-container {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.media-viewer {
+    background-color: var(--royal-blue);
+    height: 500px;
+    margin-bottom: 10px;
+    border: 2px solid var(--ice-blue);
+}
+
+.thumbnail-strip {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.thumb {
+    width: 100px;
+    height: 60px;
+    background-color: var(--bright-blue);
+    cursor: pointer;
+}
+
+.play-btn {
+    background-color: var(--ice-blue);
+    color: var(--dark-navy);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.info-box {
+    background-color: var(--royal-blue);
+    padding: 20px;
+    border-radius: 8px;
+}

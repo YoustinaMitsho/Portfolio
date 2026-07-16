@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Game Store Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">LOGO</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Store</a></li>
+            <li><a href="#">CV</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <div class="nav-controls">
+            <input type="text" class="search-bar" placeholder="Find...">
+            <select class="language-dropdown">
+                <option>EN</option>
+            </select>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <button class="carousel-btn" id="prevBtn">&lt;</button>
+        <div class="hero-content">
+            <h2>Featured Project Trailer goes here</h2>
+        </div>
+        <button class="carousel-btn" id="nextBtn">&gt;</button>
+    </header>
+
+    <div class="main-content">
+        <section class="games-section">
+            <h2>All Games</h2>
+            <button class="filter-btn">Filter =</button>
+            <div class="games-grid">
+                <div class="game-card" onclick="window.location.href='game.html'">
+                    <h3>The Canvas Contract</h3>
+                    <p>Work-Simulation</p>
+                </div>
+                <div class="game-card" onclick="window.location.href='game.html'">
+                    <h3>LEGO Legends</h3>
+                    <p>Narrative Adventure</p>
+                </div>
+                <div class="game-card" onclick="window.location.href='game.html'">
+                    <h3>Kemet</h3>
+                    <p>URP & ML Pathfinding</p>
+                </div>
+                <div class="game-card">
+                    <h3>Project 4</h3>
+                </div>
+            </div>
+        </section>
+
+        <aside class="about-section">
+            <h2>About me</h2>
+            <p>Game Developer & Project Manager specializing in C# scripting, Unity URP, and Blender 3D modeling
+                pipelines.</p>
+            <div class="social-icons">
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
