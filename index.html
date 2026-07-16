@@ -4,64 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Game Store Portfolio</title>
+    <title>Youstina Mitsho Samir | Game Developer Store</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <nav>
-        <div class="logo">LOGO</div>
+        <div class="logo">Y.M.S STORE</div>
         <ul class="nav-links">
             <li><a href="index.html">Store</a></li>
             <li><a href="#">CV</a></li>
             <li><a href="#">About</a></li>
         </ul>
-        <div class="nav-controls">
-            <input type="text" class="search-bar" placeholder="Find...">
-            <select class="language-dropdown">
-                <option>EN</option>
-            </select>
-        </div>
     </nav>
 
     <header class="hero">
         <button class="carousel-btn" id="prevBtn">&lt;</button>
-        <div class="hero-content">
-            <h2>Featured Project Trailer goes here</h2>
+        <div class="hero-content" id="heroDisplay">
+            <div class="hero-info">
+                <h2 id="heroTitle">Tankers - Multiplayer Game</h2>
+                <p id="heroDesc">Top-down shooter with optimized network synchronization for 20 players.[cite: 1]</p>
+            </div>
         </div>
         <button class="carousel-btn" id="nextBtn">&gt;</button>
     </header>
 
     <div class="main-content">
         <section class="games-section">
-            <h2>All Games</h2>
-            <button class="filter-btn">Filter =</button>
+            <h2>All Projects</h2>
             <div class="games-grid">
+                <!-- Project 1 -->
                 <div class="game-card" onclick="window.location.href='game.html'">
-                    <h3>The Canvas Contract</h3>
-                    <p>Work-Simulation</p>
+                    <div>
+                        <h3>Tankers</h3>
+                        <p class="game-tags">Multiplayer / Netcode / C#[cite: 1]</p>
+                    </div>
+                    <span>Play Now</span>
                 </div>
-                <div class="game-card" onclick="window.location.href='game.html'">
-                    <h3>LEGO Legends</h3>
-                    <p>Narrative Adventure</p>
-                </div>
-                <div class="game-card" onclick="window.location.href='game.html'">
-                    <h3>Kemet</h3>
-                    <p>URP & ML Pathfinding</p>
-                </div>
+                <!-- Project 2 -->
                 <div class="game-card">
-                    <h3>Project 4</h3>
+                    <div>
+                        <h3>Word to Puzzle</h3>
+                        <p class="game-tags">Tool / Automation / Level Design[cite: 1]</p>
+                    </div>
+                    <span>View Tool</span>
+                </div>
+                <!-- Project 3 -->
+                <div class="game-card">
+                    <div>
+                        <h3>Road Runner 2D</h3>
+                        <p class="game-tags">Mobile / Adaptive Difficulty[cite: 1]</p>
+                    </div>
+                    <span>Play Now</span>
+                </div>
+                <!-- Project 4 -->
+                <div class="game-card">
+                    <div>
+                        <h3>IPSE Jam Winner</h3>
+                        <p class="game-tags">Narrative Puzzle / 3D[cite: 1]</p>
+                    </div>
+                    <span>Play Now</span>
+                </div>
+                <!-- Project 5 -->
+                <div class="game-card">
+                    <div>
+                        <h3>Snake: Apple Quest</h3>
+                        <p class="game-tags">C++ / SFML / Vector Math[cite: 1]</p>
+                    </div>
+                    <span>Play Now</span>
+                </div>
+                <!-- Project 6 -->
+                <div class="game-card">
+                    <div>
+                        <h3>Metro Mate</h3>
+                        <p class="game-tags">Navigation / C++ / Qt[cite: 1]</p>
+                    </div>
+                    <span>View App</span>
                 </div>
             </div>
         </section>
 
         <aside class="about-section">
-            <h2>About me</h2>
-            <p>Game Developer & Project Manager specializing in C# scripting, Unity URP, and Blender 3D modeling
-                pipelines.</p>
-            <div class="social-icons">
-            </div>
+            <h2>Developer Profile</h2>
+            <h3>Youstina Mitsho Samir[cite: 1]</h3>
+            <p>Game Developer Intern at GMind[cite: 1]</p>
+
+            <hr style="border-color: var(--card-light); margin: 20px 0;">
+
+            <h4>Education</h4>
+            <ul class="cv-list">
+                <li>Ain Shams University[cite: 1]</li>
+                <li>Bachelor of Computer and Information Science[cite: 1]</li>
+                <li>CGPA: 3.61/4.0[cite: 1]</li>
+            </ul>
+
+            <h4>Recent Experience</h4>
+            <ul class="cv-list">
+                <li>Engineered VR head motion stabilization for Plantopia[cite: 1].</li>
+                <li>Designed interactive narrative sequences using Unity Timeline[cite: 1].</li>
+                <li>1st Place Winner - IPSE ITI Game Jam[cite: 1].</li>
+            </ul>
         </aside>
     </div>
 
