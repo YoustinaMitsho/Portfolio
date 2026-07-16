@@ -5,18 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youstina Mitsho Samir | Game Developer Store</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
 <body>
 
+    <!-- 1. UNIVERSAL HEADER (Paste at the top of every page) -->
     <nav>
-        <div class="logo">Y.M.S STORE</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Store</a></li>
-            <li><a href="#">CV</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
+        <div class="nav-left">
+            <div class="portfolio-header-container">
+                <img src="Assets\Personal\Logo.png" alt="Pixel Avatar" class="portfolio-avatar">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Store</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <button class="language-btn">EN</button>
+        </div>
     </nav>
 
     <header class="hero">
@@ -108,7 +116,49 @@
         </aside>
     </div>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
+</body>
+<footer>
+    <div class="footer-content">
+        <!-- Contact Info -->
+        <div class="footer-section">
+            <h4>Game Developer</h4>
+            <ul>
+                <li>Email: youstinamitcho@gmail.com</li> <!--[cite: 1] -->
+                <li>Phone: +20-128-418-0699</li> <!--[cite: 1] -->
+                <li>Location: Cairo, Egypt</li> <!--[cite: 1] -->
+            </ul>
+        </div>
+
+        <!-- Professional Links -->
+        <div class="footer-section">
+            <h4>Network</h4>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/youstina-mitcho" target="_blank">LinkedIn</a></li>
+                <!--[cite: 1] -->
+                <li><a href="https://github.com/YoustinaMitsho" target="_blank">GitHub</a></li> <!--[cite: 1] -->
+            </ul>
+        </div>
+
+        <!-- Competitive Programming -->
+        <div class="footer-section">
+            <h4>Problem Solving</h4>
+            <ul>
+                <li><a href="https://codeforces.com/profile/YoustinaM" target="_blank">Codeforces</a></li>
+                <!--[cite: 1] -->
+                <li><a href="https://vjudge.net/user/Youstina_Mitsho" target="_blank">Vjudge</a></li> <!--[cite: 1] -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="copyright">
+        &copy; 2026 Youstina Mitsho Samir. All rights reserved. Game content and assets are property of their respective
+        creators.
+    </div>
+</footer>
+
+<!-- Script tags go after the footer -->
+<script src="scripts.js"></script>
 </body>
 
 </html>
