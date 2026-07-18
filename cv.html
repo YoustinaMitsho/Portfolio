@@ -1,137 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV | Portfolio Store</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CV — Youstina Mitsho</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
 
-    <!-- 1. UNIVERSAL HEADER (Paste at the top of every page) -->
-    <nav>
-        <div class="nav-left">
-            <div class="portfolio-header-container">
-                <img src="Assets\Personal\Logo.png" alt="Pixel Avatar" class="portfolio-avatar">
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Store</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </div>
-        <div class="nav-right">
-            <button class="language-btn">EN</button>
-        </div>
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><span class="logo-dot">●</span>Youstina<span style="color:var(--coral)">.dev</span></a>
+
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+
+    <nav class="main-nav">
+      <a href="index.html">Store</a>
+      <a href="cv.html" class="active">CV</a>
+      <a href="about.html">About</a>
     </nav>
 
-    <main class="cv-container">
+    <form class="header-search-form" role="search">
+      <div class="header-search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="text" placeholder="Search games…" aria-label="Search games" />
+      </div>
+    </form>
 
-        <h2 class="cv-section-title">Experience</h2>
-        <div class="cv-grid">
-            <div class="cv-card">
-                <h3>Game Developer Intern</h3>
-                <h4>GMind | July 2025 - Sept 2025</h4>
-                <ul>
-                    <li>Engineered head motion stabilization for VR game Plantopia.[cite: 1]</li>
-                    <li>Designed interactive narrative sequences using Unity Timeline & Cinemachine.[cite: 1]</li>
-                </ul>
-            </div>
-            <div class="cv-card">
-                <h3>Game Developer Intern</h3>
-                <h4>ITI | June 2024 - Aug 2024</h4>
-                <ul>
-                    <li>Completed 8-week Unity/C# bootcamp.[cite: 1]</li>
-                    <li>Developed a 2D platformer with player controls, enemy AI, and progression.[cite: 1]</li>
-                </ul>
-            </div>
-        </div>
-
-        <h2 class="cv-section-title">Activities & Game Jams</h2>
-        <div class="cv-grid">
-            <div class="cv-card">
-                <h3>IPSE-ITI Game Jam</h3>
-                <h4>1st Place Winner | Feb 2026</h4>
-                <p>Co-developed a 30-minute narrative puzzle experience centered on identity.[cite: 1]</p>
-            </div>
-            <div class="cv-card">
-                <h3>GEM Hackathon</h3>
-                <h4>3rd Place Winner | Dec 2025</h4>
-                <p>Built a gamified app prototype for guided paths and interactive quests.[cite: 1]</p>
-            </div>
-            <div class="cv-card">
-                <h3>Player2 NPC Jam</h3>
-                <h4>Nov 2025</h4>
-                <p>Co-developed barista simulator with murder mystery solved via NPC dialogue.[cite: 1]</p>
-            </div>
-            <div class="cv-card">
-                <h3>Blender Competition</h3>
-                <h4>6th Place | June 2025</h4>
-                <p>Animated LEGO short film, competing among 50+ teams.[cite: 1]</p>
-            </div>
-        </div>
-
-        <h2 class="cv-section-title">Courses</h2>
-        <div class="cv-grid">
-            <div class="cv-card">
-                <h3>Game Development with Unity</h3>
-                <h4>Udemy | Jan 2024 - Present</h4>
-            </div>
-            <div class="cv-card">
-                <h3>AI for Games in Unity</h3>
-                <h4>Udemy | June 2025 - Present</h4>
-            </div>
-            <div class="cv-card">
-                <h3>Multiplayer Framework with Unity</h3>
-                <h4>Udemy | 2025</h4>
-            </div>
-        </div>
-
-    </main>
-</body>
-<footer>
-    <div class="footer-content">
-        <!-- Contact Info -->
-        <div class="footer-section">
-            <h4>Game Developer</h4>
-            <ul>
-                <li>Email: youstinamitcho@gmail.com</li> <!--[cite: 1] -->
-                <li>Phone: +20-128-418-0699</li> <!--[cite: 1] -->
-                <li>Location: Cairo, Egypt</li> <!--[cite: 1] -->
-            </ul>
-        </div>
-
-        <!-- Professional Links -->
-        <div class="footer-section">
-            <h4>Network</h4>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/youstina-mitcho" target="_blank">LinkedIn</a></li>
-                <!--[cite: 1] -->
-                <li><a href="https://github.com/YoustinaMitsho" target="_blank">GitHub</a></li> <!--[cite: 1] -->
-            </ul>
-        </div>
-
-        <!-- Competitive Programming -->
-        <div class="footer-section">
-            <h4>Problem Solving</h4>
-            <ul>
-                <li><a href="https://codeforces.com/profile/YoustinaM" target="_blank">Codeforces</a></li>
-                <!--[cite: 1] -->
-                <li><a href="https://vjudge.net/user/Youstina_Mitsho" target="_blank">Vjudge</a></li> <!--[cite: 1] -->
-            </ul>
-        </div>
+    <div class="lang-select">
+      <button type="button">EN
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="lang-note">Multi-language support is a placeholder for now — wire this up when you add translated copy.</div>
     </div>
+  </div>
+</header>
 
-    <div class="copyright">
-        &copy; 2026 Youstina Mitsho Samir. All rights reserved. Game content and assets are property of their respective
-        creators.
+<main>
+
+  <div class="page-header">
+    <span class="eyebrow">Résumé</span>
+    <h1>Youstina Mitsho Samir</h1>
+    <p class="lead">Game Developer &amp; Computer Science student in Cairo, Egypt — Unity/C#, multiplayer netcode, and VR comfort systems, with a stack of game-jam wins along the way.</p>
+  </div>
+
+  <div class="cv-actions">
+    <a class="btn btn-primary" href="assets/Youstina_Mitsho_CV.pdf" download>⬇ Download CV (PDF)</a>
+    <a class="btn btn-ghost" href="mailto:youstinamitcho@gmail.com">Email me</a>
+    <a class="btn btn-ghost" href="tel:+201284180699">+20 128 418 0699</a>
+  </div>
+
+  <section class="cv-section">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="when">September 2022 – June 2026</span>
+        <h3>Bachelor of Computer &amp; Information Science</h3>
+        <span class="where">Ain Shams University · Cairo, Egypt</span>
+        <ul>
+          <li>CGPA: 3.61 / 4.0</li>
+        </ul>
+      </div>
     </div>
+  </section>
+
+  <section class="cv-section">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="when">July 2025 – September 2025</span>
+        <h3>Game Developer Intern</h3>
+        <span class="where">GMind · Alexandria, Egypt</span>
+        <ul>
+          <li>Engineered a head motion stabilization system for the VR game Plantopia</li>
+          <li>Designed 3+ interactive narrative sequences using Unity Timeline and Cinemachine</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <span class="when">June 2024 – August 2024</span>
+        <h3>Game Developer Intern</h3>
+        <span class="where">Information Technology Institute (ITI) · Cairo, Egypt</span>
+        <ul>
+          <li>Completed an 8-week Unity/C# bootcamp covering physics simulation, animation, and collision detection</li>
+          <li>Built a 2D platformer with player controls, enemy AI, and progression systems</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cv-section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h4>Programming languages</h4>
+        <div class="pill-row">
+          <span>C++</span><span>C#</span><span>Python</span><span>Java</span><span>SQL</span><span>PL/SQL</span><span>HTML</span><span>CSS</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>Game development</h4>
+        <div class="pill-row">
+          <span>Unity</span><span>C# Scripting</span><span>SFML</span><span>Gameplay Mechanics</span><span>Game Physics</span><span>Animation</span><span>Performance Optimization</span><span>Netcode for GameObjects</span><span>VR Development</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>Tools &amp; technologies</h4>
+        <div class="pill-row">
+          <span>Git</span><span>GitHub</span><span>Visual Studio</span><span>IntelliJ IDEA</span><span>VS Code</span><span>Eclipse</span><span>Oracle SQL Developer</span><span>Figma</span><span>Blender</span><span>Linux</span><span>Qt</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>Software</h4>
+        <div class="pill-row">
+          <span>Scene Builder</span><span>SolidWorks</span><span>Unity Timeline</span><span>Cinemachine</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cv-section">
+    <h2>Courses</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="when">January 2024 – Present</span>
+        <h3>Game Development with Unity</h3>
+        <span class="where">Udemy</span>
+      </div>
+      <div class="timeline-item">
+        <span class="when">June 2025 – Present</span>
+        <h3>AI for Games in Unity</h3>
+        <span class="where">Udemy</span>
+      </div>
+      <div class="timeline-item">
+        <span class="when">2025</span>
+        <h3>Multiplayer Framework with Unity</h3>
+        <span class="where">Udemy</span>
+      </div>
+      <div class="timeline-item">
+        <span class="when">2022</span>
+        <h3>Competitive Programming</h3>
+        <span class="where">Coach Academy</span>
+      </div>
+      <div class="timeline-item">
+        <span class="when">2021</span>
+        <h3>Python Programming</h3>
+        <span class="where">ISTEM</span>
+      </div>
+      <div class="timeline-item">
+        <span class="when">2020</span>
+        <h3>Scratch</h3>
+        <span class="where">Power Academy</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cv-section" style="margin-bottom: 60px;">
+    <h2>Languages</h2>
+    <div class="pill-row">
+      <span>Arabic — Native</span>
+      <span>English — Fluent</span>
+      <span>French — Elementary</span>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-about">
+      <h3>About me</h3>
+      <p>Cairo-based Computer Science student and game developer. I build multiplayer systems, VR comfort tooling, and small playable things at game jams — this store is where they all live.</p>
+      <a class="btn btn-ghost btn-sm" href="about.html" style="margin-top:10px;">More about me →</a>
+    </div>
+    <div class="footer-meta">
+      <div class="footer-logo">Youstina<span style="color:var(--coral)">.dev</span></div>
+      <div class="social-row">
+        <a href="mailto:youstinamitcho@gmail.com" aria-label="Email">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.8"/></svg>
+        </a>
+        <a href="#" aria-label="GitHub">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 11-4-.002 2 2 0 014 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© <span data-year></span> Youstina Mitsho Samir — built with HTML, CSS &amp; JS</div>
 </footer>
 
-<!-- Script tags go after the footer -->
-<script src="scripts.js"></script>
+<script src="js/main.js"></script>
 </body>
-
 </html>

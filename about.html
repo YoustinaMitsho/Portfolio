@@ -1,135 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Portfolio Store</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — Youstina Mitsho</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
 
-    <!-- 1. UNIVERSAL HEADER (Paste at the top of every page) -->
-    <nav>
-        <div class="nav-left">
-            <div class="portfolio-header-container">
-                <img src="Assets\Personal\Logo.png" alt="Pixel Avatar" class="portfolio-avatar">
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Store</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </div>
-        <div class="nav-right">
-            <button class="language-btn">EN</button>
-        </div>
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><span class="logo-dot">●</span>Youstina<span style="color:var(--coral)">.dev</span></a>
+
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+
+    <nav class="main-nav">
+      <a href="index.html">Store</a>
+      <a href="cv.html">CV</a>
+      <a href="about.html" class="active">About</a>
     </nav>
 
-    <main class="about-container">
+    <form class="header-search-form" role="search">
+      <div class="header-search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="text" placeholder="Search games…" aria-label="Search games" />
+      </div>
+    </form>
 
-        <!-- Player Avatar & Bio -->
-        <div class="profile-column">
-            <div class="pixel-avatar">
-                <img src="Assets\Personal\Profile_Picture.png" alt="Profile Picture"
-                    style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <h2>Youstina Mitsho Samir[cite: 1]</h2>
-            <h4 style="color: var(--action-red);">Game Developer</h4>
-            <p>Cairo, Egypt[cite: 1]</p>
-            <hr style="border-color: var(--card-light); margin: 20px 0;">
-            <h3>Education Base</h3>
-            <p><strong>Ain Shams University</strong>[cite: 1]</p>
-            <p>Bachelor of Computer and Information Science[cite: 1]</p>
-            <p>CGPA: 3.61/4.0[cite: 1]</p>
-            <p>Sept 2022 - June 2026[cite: 1]</p>
-        </div>
-
-        <!-- Skills as Race/Stat Tracks -->
-        <div class="info-column">
-            <h2 style="color: var(--action-red); border-bottom: 2px solid var(--action-red); padding-bottom: 10px;">
-                Developer Stats (Skills)</h2>
-
-            <h3>Programming Languages</h3>
-            <div class="skill-track">
-                <div class="skill-fill" style="width: 95%;"><span class="skill-label">C#</span></div>
-            </div>
-            <div class="skill-track">
-                <div class="skill-fill" style="width: 90%;"><span class="skill-label">C++</span></div>
-            </div>
-            <div class="skill-track">
-                <div class="skill-fill" style="width: 85%;"><span class="skill-label">Python / Java</span></div>
-            </div>
-
-            <h3>Game Development</h3>
-            <div class="skill-track">
-                <div class="skill-fill" style="width: 95%;"><span class="skill-label">Unity Engine</span></div>
-            </div>
-            <div class="skill-track">
-                <div class="skill-fill" style="width: 80%;"><span class="skill-label">Gameplay Mechanics &
-                        Physics</span></div>
-            </div>
-            <div class="skill-track">
-                <div class="skill-fill" style="width: 75%;"><span class="skill-label">Netcode & VR</span></div>
-            </div>
-
-            <h3>Tools & Design</h3>
-            <div class="skill-track">
-                <div class="skill-fill" style="width: 85%;"><span class="skill-label">Blender</span></div>
-            </div>
-            <div class="skill-track">
-                <div class="skill-fill" style="width: 85%;"><span class="skill-label">Figma</span></div>
-            </div>
-            <div class="skill-track">
-                <div class="skill-fill" style="width: 90%;"><span class="skill-label">Git / GitHub</span></div>
-            </div>
-
-        </div>
-
-    </main>
-</body>
-<footer>
-    <div class="footer-content">
-        <!-- Contact Info -->
-        <div class="footer-section">
-            <h4>Game Developer</h4>
-            <ul>
-                <li>Email: youstinamitcho@gmail.com</li> <!--[cite: 1] -->
-                <li>Phone: +20-128-418-0699</li> <!--[cite: 1] -->
-                <li>Location: Cairo, Egypt</li> <!--[cite: 1] -->
-            </ul>
-        </div>
-
-        <!-- Professional Links -->
-        <div class="footer-section">
-            <h4>Network</h4>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/youstina-mitcho" target="_blank">LinkedIn</a></li>
-                <!--[cite: 1] -->
-                <li><a href="https://github.com/YoustinaMitsho" target="_blank">GitHub</a></li> <!--[cite: 1] -->
-            </ul>
-        </div>
-
-        <!-- Competitive Programming -->
-        <div class="footer-section">
-            <h4>Problem Solving</h4>
-            <ul>
-                <li><a href="https://codeforces.com/profile/YoustinaM" target="_blank">Codeforces</a></li>
-                <!--[cite: 1] -->
-                <li><a href="https://vjudge.net/user/Youstina_Mitsho" target="_blank">Vjudge</a></li> <!--[cite: 1] -->
-            </ul>
-        </div>
+    <div class="lang-select">
+      <button type="button">EN
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="lang-note">Multi-language support is a placeholder for now — wire this up when you add translated copy.</div>
     </div>
+  </div>
+</header>
 
-    <div class="copyright">
-        &copy; 2026 Youstina Mitsho Samir. All rights reserved. Game content and assets are property of their respective
-        creators.
+<main>
+
+  <div class="page-header">
+    <span class="eyebrow">About</span>
+    <h1>Hi, I'm Youstina 👋</h1>
+  </div>
+
+  <div class="about-grid">
+    <aside class="player-card">
+      <div class="player-avatar">Y</div>
+      <h3>Youstina Mitsho</h3>
+      <div class="role">Game Developer</div>
+      <div class="stat-row"><span>Location</span><span>Cairo, Egypt</span></div>
+      <div class="stat-row"><span>Focus</span><span>Gameplay &amp; Multiplayer</span></div>
+      <div class="stat-row"><span>Studying</span><span>BSc CS, until 2026</span></div>
+      <div class="stat-row"><span>Games in store</span><span id="gameCount">—</span></div>
+      <a class="btn btn-primary btn-sm" href="cv.html" style="margin-top:18px; width:100%;">View full CV</a>
+    </aside>
+
+    <div class="about-copy">
+      <h2>The short version</h2>
+      <p>I'm a Computer Science student at Ain Shams University and a game developer based in Cairo, Egypt. I like the parts of game dev that sit right between a programming puzzle and a craft: getting a multiplayer tank battle to feel instant online, teaching an enemy to actually aim at you, or making a VR scene comfortable enough that people forget they're wearing a headset.</p>
+      <p>Most of what's in the store came out of internships, solo weekend projects, or a game jam with a two-day deadline and not nearly enough sleep. I've shipped a multiplayer shooter, a couple of 2D games, a level generator, and worked on VR comfort systems for a studio — and picked up a first-place win along the way.</p>
+      <p>When I'm not writing gameplay code, I'm usually somewhere adjacent to it — editing trailers, running workshops, or helping other students make their first game.</p>
+
+      <h2 style="margin-top:36px;">Outside the store</h2>
+      <div class="activity-list">
+        <div class="activity-item">
+          <span class="when">Oct 2023 – Aug 2024</span>
+          <h4>Media Head, RoboTech</h4>
+          <p>Generated graphics and video content for 3+ club events.</p>
+        </div>
+        <div class="activity-item">
+          <span class="when">Feb 2023 – Aug 2024</span>
+          <h4>MSP Tech Club workshops &amp; jams</h4>
+          <p>Ran an SFML workshop, built a game in a 72-hour local jam, and designed a security challenge for a Hack Your Game CTF with 80+ participants.</p>
+        </div>
+        <div class="activity-item">
+          <span class="when">Ongoing</span>
+          <h4>Video editing</h4>
+          <p>Edited a gameplay trailer with visual effects and produced 25+ social media assets for RoboTech.</p>
+        </div>
+      </div>
+
+      <h2 style="margin-top:36px;">Get in touch</h2>
+      <div class="cv-actions" style="padding:0; margin-top:6px;">
+        <a class="btn btn-primary" href="mailto:youstinamitcho@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="#">LinkedIn</a>
+        <a class="btn btn-ghost" href="#">GitHub</a>
+        <a class="btn btn-ghost" href="#">Codeforces</a>
+      </div>
     </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-about">
+      <h3>About me</h3>
+      <p>Cairo-based Computer Science student and game developer. I build multiplayer systems, VR comfort tooling, and small playable things at game jams — this store is where they all live.</p>
+    </div>
+    <div class="footer-meta">
+      <div class="footer-logo">Youstina<span style="color:var(--coral)">.dev</span></div>
+      <div class="social-row">
+        <a href="mailto:youstinamitcho@gmail.com" aria-label="Email">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.8"/></svg>
+        </a>
+        <a href="#" aria-label="GitHub">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 11-4-.002 2 2 0 014 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© <span data-year></span> Youstina Mitsho Samir — built with HTML, CSS &amp; JS</div>
 </footer>
 
-<!-- Script tags go after the footer -->
-<script src="scripts.js"></script>
+<script src="js/games-data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.getElementById("gameCount").textContent = GAMES.length;
+</script>
 </body>
-
 </html>
